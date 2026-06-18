@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tire Safety Academy — Wrench &amp; Readout</title>
+<meta name="description" content="A roadside-readable checklist for safely changing a flat tire, plus an interactive breakdown of what every code on a tire's sidewall actually means." />
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
+      Wrench &amp; Readout
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Explorer</a></li>
+      <li><a href="repairs.html">Gateway Repairs</a></li>
+      <li><a href="tires.html" class="active">Tire Academy</a></li>
+      <li><a href="economics.html">Repair Economics</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <section class="page-intro container">
+    <span class="eyebrow">Module: Tire Safety</span>
+    <h1>The Complete Tire Safety Academy</h1>
+    <p class="lede mt-4">Two skills every driver should have: changing a flat safely on the shoulder of a road, and reading the code on a sidewall well enough to know if a tire is actually right for your car.</p>
+  </section>
+
+  <!-- ============ PART 1: FLAT TIRE CHECKLIST ============ -->
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Part 1 — Emergency Procedure</span>
+        <h2>How to Safely Change a Flat Tire</h2>
+      </div>
+    </div>
+    <p class="lede mb-0">High-contrast, six-step checklist — built to be readable on a phone screen at the side of a road.</p>
+
+    <ol class="checklist mt-4">
+      <li class="critical">
+        <span class="hide-sr">Step 1</span>
+        <div>
+          <h4>Safety First</h4>
+          <p>Park on level ground immediately, pull the parking brake tight, turn on your hazard lights, and place a wheel chock behind the opposite tire.</p>
+        </div>
+      </li>
+      <li>
+        <span class="hide-sr">Step 2</span>
+        <div>
+          <h4>Loosen Lug Nuts</h4>
+          <p>Grab your lug wrench. While the vehicle is still firmly on the ground, loosen the lug nuts on the flat tire by a half-turn counterclockwise — do not remove them yet.</p>
+        </div>
+      </li>
+      <li class="critical">
+        <span class="hide-sr">Step 3</span>
+        <div>
+          <h4>Lift the Vehicle</h4>
+          <p>Locate your car's designated frame jacking points (check your owner's manual). Position the jack cleanly underneath, and raise the vehicle until the flat tire clears the pavement by 2–3 inches.</p>
+        </div>
+      </li>
+      <li>
+        <span class="hide-sr">Step 4</span>
+        <div>
+          <h4>Swap the Wheels</h4>
+          <p>Remove the loose lug nuts fully, pull the flat tire off, and lift the spare tire onto the lug bolts.</p>
+        </div>
+      </li>
+      <li>
+        <span class="hide-sr">Step 5</span>
+        <div>
+          <h4>Hand Tighten</h4>
+          <p>Reinstall the lug nuts by hand, tightening them until they are snug against the wheel face.</p>
+        </div>
+      </li>
+      <li class="critical">
+        <span class="hide-sr">Step 6</span>
+        <div>
+          <h4>Lower and Final Torque</h4>
+          <p>Lower the vehicle until the tire touches the ground just enough to gain friction, but don't let the full weight down yet. Tighten the lug nuts firmly in a star/crisscross pattern. Lower the vehicle completely, remove the jack, and give the lug nuts one final check for tightness.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ PART 2: SIDEWALL DECODER ============ -->
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Part 2 — The Decode Matrix</span>
+        <h2>How to Read a Tire Sidewall</h2>
+      </div>
+    </div>
+    <p class="lede mb-0">Click each piece of this standard example code to break down what it means.</p>
+
+    <div class="tire-string" id="tire-string">
+      <span class="tire-char" data-key="P">P</span>
+      <span class="tire-char" data-key="215">215</span>
+      <span class="tire-char sep">/</span>
+      <span class="tire-char" data-key="65">65</span>
+      <span class="tire-char" data-key="R">R</span>
+      <span class="tire-char" data-key="15">15</span>
+      <span class="tire-char sep">&nbsp;</span>
+      <span class="tire-char" data-key="95">95</span>
+      <span class="tire-char" data-key="H">H</span>
+    </div>
+
+    <div class="decode-panel" id="decode-panel">
+      <span class="dp-key">Select a code above</span>
+      <div class="dp-title">P215/65R15 95H</div>
+      <p class="dp-desc">This is a standard passenger tire size string. Click any segment — P, 215, 65, R, 15, 95, or H — to see what it controls.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-grid">
+    <ul class="footer-nav">
+      <li><a href="index.html">Explorer</a></li>
+      <li><a href="repairs.html">Gateway Repairs</a></li>
+      <li><a href="tires.html">Tire Academy</a></li>
+      <li><a href="economics.html">Repair Economics</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <span class="footer-meta">Wrench &amp; Readout — Independent reference, no shop affiliations</span>
+  </div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/tire-decoder.js"></script>
+</body>
+</html>
